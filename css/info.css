@@ -1,0 +1,67 @@
+#info{
+    background: rgb(4, 68, 47);
+    color: rgb(255, 255, 255);
+    text-align:center;
+    padding-top: 70px;
+    align-items: center;
+   
+    
+}
+
+#info h2{
+    padding: 25px;
+text-transform: uppercase;
+}
+
+#info .contenedor{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.pancito{
+    
+    margin: 20px;
+    padding: 20px;
+}
+   
+.pancito img{
+    border-radius: 50%;
+    border:5px solid white ;
+    width: 270px;
+    height:270px;
+}
+/*celulares*/
+@media(min-width: 360px){
+    
+    .pancito img{
+        border-radius: 50%;
+        border:5px solid white ;
+        width: 180px;
+        height:180px;
+    }
+  }
+  
+  /*tablets*/
+  @media(min-width: 768px){
+    .pancito img{
+        border-radius: 50%;
+        border:5px solid white ;
+        width: 200px;
+        height:200px;
+    }
+  }
+ 
+
+  /*Escritorio*/
+  @media(min-width: 1024px){
+    .pancito img{
+        border-radius: 50%;
+        border:5px solid white ;
+        width: 270px;
+        height:270px;
+    }
+
+  }
+
+

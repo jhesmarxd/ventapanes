@@ -1,0 +1,82 @@
+#menu-bar{
+    display:none;
+    
+}
+header label{
+    float: right;
+    font-size: 28px;
+    margin:6px 0;
+    cursor: pointer;
+    padding: 20px 0 0 20px;  
+}
+ .menu {
+    position: absolute;
+
+    top: 80px;
+    right: 0px;
+    width: 20%;
+    height: 31vh;
+    background: rgb(94, 80, 2);
+    transform: translateX(200%);
+}
+.menu a{
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    padding: 15px;
+    padding-top: 10px;
+    border: 1px solid white; 
+}
+.menu a:hover{
+    background-color:rgb(223, 208, 208) ;
+    color: black;
+}
+#menu-bar:checked ~.menu{
+    transform: translateX(0%);
+}
+/*----responsive----*/
+
+/*celulares*/
+@media(min-width: 320px){
+    .menu{background: rgb(158, 149, 99);
+    width:30%;
+    height:auto;
+    float:right;}
+}
+
+/*tablets*/
+@media(min-width: 768px){
+.menu{
+    background: rgb(141, 126, 196);
+    width:30%;
+    height:auto;
+    float:right;
+}
+}
+
+/*Escritorio*/
+@media(min-width: 1024px){
+    .menu {
+        position:static;
+        width:auto;
+        height:auto;
+        transform:translateX(0%);
+        float:right;
+        display:flex;
+        background: rgb(170, 167, 10);
+        align-items: center;
+        padding: 20px 20px 10px 20px;
+        
+    }
+    .menu a{
+       border: none; 
+       font-size: 19px;
+    }
+    header label{
+        display: none;
+    }
+
+
+}
